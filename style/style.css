@@ -278,7 +278,7 @@ main , footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-        margin-left: 13px;
+        margin-left: px;
       
     }
     .sponsor-image {
