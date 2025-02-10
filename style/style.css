@@ -1,9 +1,166 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+/* shared style */
 .work-sans-font {
   font-family: "Work Sans", serif;
   font-optical-sizing: auto;
-  font-weight: 500px;
+  font-weight: 400px;
   font-style: normal;
+}
+.border{
+    border: 2px solid seagreen;
+}
+.display-flex{
+    display: flex;
+}
+.dark-01{
+    color: rgb(19, 19, 19);
+}
+.dark-02{
+    color: rgb(66, 66, 66);
+}
+.dark-03{
+    color: rgb(114, 114, 114);
+}
+.bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+  
+}
+.btn-primary{
+    background-color: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 12px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+section{
+    margin-top: 50px;
+}
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* header style */
+.navbar , .banner-section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* navbar style */
+.ham-burger{
+    display: none;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.brand{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav-item{
+    margin-right: 30px;
+}
+.nav-link{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    }
+
+/*banner style */
+.banner-content{
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.banner-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.banner-description{
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    }
+
+.banner-image{
+    width: 100%;
+    margin-top: 20px;
+}
+/* features section */
+.features-section{
+    align-items: center;
+}
+.features-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+   
+}
+.features-image img{
+    max-width: 100%;
+}
+/* feature text */
+.features-text{
+    margin-left: 40px;
+   
+}
+#features{
+    color: rgb(255, 144, 14);
+}
+.features-description{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* responsive mobile design */
+@media screen and (max-width: 576px) {
+    .nav-links{
+        display: none;
+    }
+    .ham-burger{
+        display: block;
+        margin-right: 20px;
+        margin-top: 15px;
+
+    }
+    .brand{
+        margin-left: 20px;
+        margin-top: 10px;
+       
+    }
+    /* features-section */
+    .features-image{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;}
+
+    .features-section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .features-text{
+        margin-top: 20px;
+        margin-left: 30px;
+        
+    }
+
+    
 }
