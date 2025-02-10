@@ -270,6 +270,10 @@ main , footer{
     .love-enjoy-container{
         flex-direction: column;
     }
+    .love-enjoy-image-area{
+        padding: 1j0px;
+    }
+    
     /* card box */
     .card-boxs{
         /* flex-direction: column;
